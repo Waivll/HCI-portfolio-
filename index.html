@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #1e1e1e;
+            color: #ffffff;
+
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20vw;
+            height: 100vh;
+
+            background: url("images/vscode_leftside.png") no-repeat left top;
+            background-size: cover;
+
+            opacity: 0.5; 
+            z-index: -1;
+        }
+
+        
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 20vw;
+            height: 100vh;
+
+            background: url("images/vscode_rightside.png") no-repeat right top;
+            background-size: cover;
+
+            opacity: 0.5;
+
+            z-index: -1;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 4rem;
+
+        }
+        section p {
+            line-height: 2.5;
+        }
+        section ul {
+            line-height: 3;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: #252526;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #4fc1ff;
+            text-decoration: none;
+        }
+
+        
+    </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Owen Chen</h1>
+        <p>Computer Science Student (3rd year)</p>
+    </header>
+
+    <main>
+
+    <section>
+        <h2>About Me</h2>
+        <p>My name is Owen Chen and I'm an upcoming senior. As a hobby I've built multiple desktop computers, from low entry to high performance computers. 
+            In my HCI class I was expecting more coding intensive assignments, although it wasn't what I was expecting, it was a good lesson on how to design a website. 
+        </p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+
+        <div class="card">
+            <img src="images/ds1.png" alt="Project 1 image">
+            <h3>Designing for Others</h3>
+            <p>This assignment has us working in a group to redesign a website suited for a targeted audience.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/ds2.png" alt="Project 2 image">
+            <h3>Designing for Gestural Interaction</h3>
+            <p>This assignment has us in a group to create controls on a software only using hand gestures.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/ds3.png" alt="Project 3 image">
+            <h3>Designing for Usability</h3>
+            <p>This assignment has us redesigning a software solving its issues using heuristic testing and making it more usable.</p>
+        </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Design Documents</h2>
+        <ul>
+        <li><a href="https://www.notion.so/Design-Sprint-1-30c14603aff480798204c63463ea6e4b?source=copy_link"
+                >Designing for Others</a></li>
+        <li><a href="https://www.notion.so/DS2-Designing-for-Gestural-Interaction-31bbbeb3ebe880fe8395f2acec9f
+                    a3b6?source=copy_link">Designing for gestural interaction</a></li>
+        <li><a href="https://www.notion.so/DS3-Designing-For-Usability-AAOG-348bbeb3ebe8809c90b6fdf77dfe04
+                    86?source=copy_linkGithub Link:https://github.com/andromeda727/DS3">Designing For Usability</a></li>
+        <li><a href="https://confusion-brush-bcb.notion.site/Observing-Personal-Health-Technology-33ebba68f66380
+                    8f9d88dce13ab784da?source=copy_link">Practicing Observation</a></li>
+        <li><a href="https://confusion-brush-bcb.notion.site/Accessibility-Audit-34dbba68f6638069903cc1d63ceadc7
+                    2?source=copy_link ">Accessibility audit</a></li>
+        </ul>
+    </section>
+
+</main>
+
+</body>
+</html>
